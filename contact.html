@@ -170,12 +170,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
   display: block !important; -webkit-flex-shrink: 0; flex-shrink: 0;
 }
 
-/* ── "VASTGOLD ENTERPRISE" — bold black, Cinzel serif matching logo ── */
+/* ── "VASTGOLD / ENTERPRISE" — two-line stacked brand name ── */
 #sticky-header .site-branding .custom-logo-link::after {
-  content: "VASTGOLD ENTERPRISE";
+  content: "VASTGOLD\AENTERPRISE";
   display: inline-block !important;
   font-family: 'Cinzel', 'Trajan Pro', 'Times New Roman', serif;
-  font-size: 1.45rem;
+  font-size: 1.05rem;
   font-weight: 900;
   color: #0a1f5c !important;
   -webkit-text-fill-color: #0a1f5c !important;
@@ -184,13 +184,16 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
   background-clip: unset !important;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  white-space: nowrap;
-  line-height: 1.2;
+  white-space: pre;
+  line-height: 1.35;
   vertical-align: middle;
+  text-align: left;
 }
 
-/* ── Nav right ── */
-#sticky-header .main-navigation { margin-left: auto !important; }
+/* ── Nav left; lang button anchored far right ── */
+#sticky-header .manu-wrapper { -webkit-justify-content: flex-start !important; justify-content: flex-start !important; }
+#sticky-header .main-navigation { margin-left: 28px !important; }
+#sticky-header .menu-element { margin-left: auto !important; -webkit-flex-shrink: 0 !important; flex-shrink: 0 !important; }
 #sticky-header .main-navigation .menu-ul {
   display: -webkit-flex !important; display: flex !important;
   -webkit-flex-wrap: nowrap !important; flex-wrap: nowrap !important;
@@ -226,6 +229,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 body { -webkit-font-smoothing: antialiased; }
 #sticky-header { overflow: visible !important; }
+#sticky-header .search, #sticky-header .search-icon,
+.mobile-menu .search-icon, .mobile-menu .component { display: none !important; }
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap" rel="stylesheet" id="vastgold-font">
 <style id="vastgold-slider-fix">

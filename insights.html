@@ -141,82 +141,63 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 <style id="vastgold-header-fix">
-/* ── Wrapper: logo+name left, nav right ── */
+/* ── Wrapper ── */
 #sticky-header .manu-wrapper {
-  display: -webkit-flex !important;
-  display: flex !important;
-  -webkit-align-items: center !important;
-  align-items: center !important;
-  -webkit-justify-content: space-between !important;
-  justify-content: space-between !important;
-  -webkit-flex-wrap: nowrap !important;
-  flex-wrap: nowrap !important;
-  width: 100%;
-  overflow: visible !important;
+  display: -webkit-flex !important; display: flex !important;
+  -webkit-align-items: center !important; align-items: center !important;
+  -webkit-justify-content: space-between !important; justify-content: space-between !important;
+  -webkit-flex-wrap: nowrap !important; flex-wrap: nowrap !important;
+  width: 100%; overflow: visible !important;
 }
 
 /* ── Logo link: inline-flex row ── */
 #sticky-header .site-branding { -webkit-flex-shrink: 0; flex-shrink: 0; }
 #sticky-header .site-branding .custom-logo-link {
-  display: -webkit-inline-flex !important;
-  display: inline-flex !important;
-  -webkit-flex-direction: row !important;
-  flex-direction: row !important;
-  -webkit-align-items: center !important;
-  align-items: center !important;
-  gap: 14px;
-  text-decoration: none;
+  display: -webkit-inline-flex !important; display: inline-flex !important;
+  -webkit-flex-direction: row !important; flex-direction: row !important;
+  -webkit-align-items: center !important; align-items: center !important;
+  gap: 14px; text-decoration: none;
 }
 
-/* ── Logo: 90px tall, smooth rendering ── */
+/* ── Logo 90px, smooth ── */
 #sticky-header .site-branding .custom-logo {
-  height: 90px !important;
-  width: auto !important;
-  max-width: none !important;
-  object-fit: contain !important;
-  display: block !important;
-  -webkit-flex-shrink: 0;
-  flex-shrink: 0;
+  height: 90px !important; width: auto !important;
+  max-width: none !important; object-fit: contain !important;
+  display: block !important; -webkit-flex-shrink: 0; flex-shrink: 0;
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; backface-visibility: hidden;
   transform: translateZ(0);
 }
 
-/* ── "Vastgold Enterprise" — 2 sizes up, fire gold color ── */
+/* ── "VASTGOLD ENTERPRISE" — bold black, Cinzel serif matching logo ── */
 #sticky-header .site-branding .custom-logo-link::after {
-  content: "Vastgold Enterprise";
+  content: "VASTGOLD ENTERPRISE";
   display: inline-block !important;
-  font-size: 1.55rem;
-  font-weight: 800;
+  font-family: 'Cinzel', 'Trajan Pro', 'Times New Roman', serif;
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: #111111 !important;
+  -webkit-text-fill-color: #111111 !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   white-space: nowrap;
   line-height: 1.2;
   vertical-align: middle;
-  background: linear-gradient(135deg, #FFB300 0%, #FF6F00 50%, #E65100 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: 0.02em;
 }
 
-/* ── Nav pushed right ── */
+/* ── Nav right ── */
 #sticky-header .main-navigation { margin-left: auto !important; }
-
-/* ── Nav tabs: no wrap ── */
 #sticky-header .main-navigation .menu-ul {
-  display: -webkit-flex !important;
-  display: flex !important;
-  -webkit-flex-wrap: nowrap !important;
-  flex-wrap: nowrap !important;
-  -webkit-align-items: center !important;
-  align-items: center !important;
+  display: -webkit-flex !important; display: flex !important;
+  -webkit-flex-wrap: nowrap !important; flex-wrap: nowrap !important;
+  -webkit-align-items: center !important; align-items: center !important;
   margin: 0; padding: 0; list-style: none;
 }
 #sticky-header .main-navigation .menu-ul > li {
-  -webkit-flex-shrink: 0 !important;
-  flex-shrink: 0 !important;
-  white-space: nowrap;
+  -webkit-flex-shrink: 0 !important; flex-shrink: 0 !important; white-space: nowrap;
 }
 
 /* ── Dropdowns ── */
@@ -235,17 +216,16 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 /* ── Mobile ── */
 .mobile-menu .site-logo .custom-logo {
   height: 65px !important; width: auto !important; object-fit: contain !important;
-  image-rendering: -webkit-optimize-contrast;
 }
 .mobile-menu .menu-ul,
 .mobile-menu ul.menu-ul { display: block !important; flex-wrap: unset !important; }
 .mobile-menu .menu-ul > li {
   display: block !important; flex-shrink: unset !important; white-space: normal !important;
 }
-
 body { -webkit-font-smoothing: antialiased; }
 #sticky-header { overflow: visible !important; }
 </style>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap" rel="stylesheet" id="vastgold-font">
 </head>
 
 <body class="archive category category-insights category-1 wp-custom-logo ehf-template-solute ehf-stylesheet-solute hfeed elementor-default elementor-kit-5891">

@@ -180,3 +180,79 @@ footer { background: #040608; padding: 3.5rem 0 2rem; border-top: 1px solid var(
   .process-steps { grid-template-columns: 1fr; }
   .hero-stats { gap: 1.2rem; }
 }
+
+/* ── Language toggle button ─────────────────────────────────── */
+.vg-lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 13px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #0a1f5c;
+  background: #fff;
+  border: 1.5px solid #0a1f5c;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, border-color 0.18s;
+  vertical-align: middle;
+  margin-left: 14px;
+  white-space: nowrap;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  box-shadow: 0 1px 4px rgba(10,31,92,0.10);
+  line-height: 1;
+  flex-shrink: 0;
+}
+.vg-lang-btn:hover {
+  background: #0a1f5c;
+  color: #fff;
+  border-color: #0a1f5c;
+}
+.vg-flag {
+  font-size: 1.05em;
+  line-height: 1;
+}
+.vg-lang-text {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+/* Desktop nav wrapper: keep button aligned with nav items */
+#sticky-header .menu-element {
+  display: -webkit-flex !important;
+  display: flex !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+}
+
+/* ── Mobile: lang button lives in .menu-bar ──────────────────── */
+.mobile-menu .menu-bar {
+  display: -webkit-flex !important;
+  display: flex !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  -webkit-justify-content: space-between !important;
+  justify-content: space-between !important;
+  gap: 6px;
+  overflow: visible !important;
+}
+.mobile-menu .site-logo {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: visible;
+}
+.mobile-menu .menu-bar .vg-lang-btn {
+  flex-shrink: 0;
+  margin-left: 0;
+  padding: 4px 10px;
+  font-size: 0.72rem;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(10,31,92,0.12);
+}
+.mobile-menu .menu-bar .vg-lang-btn .vg-flag {
+  font-size: 1em;
+}
+.mobile-menu .menu-bar .vg-lang-btn .vg-lang-text {
+  font-size: 0.72rem;
+}

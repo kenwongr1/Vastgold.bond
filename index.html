@@ -253,6 +253,23 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 }
 </style>
 
+
+<style id="vastgold-logo-fix">
+/* Constrain Vastgold logo to header height */
+.custom-logo-link .custom-logo,
+.site-branding .custom-logo,
+.site-logo .custom-logo {
+  height: 50px !important;
+  width: auto !important;
+  max-width: 200px !important;
+  object-fit: contain !important;
+}
+/* Mobile bar logo slightly smaller */
+.mobile-menu .site-logo .custom-logo {
+  height: 44px !important;
+}
+</style>
+
 </head>
 
 <body class="home page-template-default page page-id-605 wp-custom-logo ehf-template-solute ehf-stylesheet-solute elementor-default elementor-kit-5891 elementor-page elementor-page-605">
@@ -272,7 +289,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
         <div class="container">
             <div class="manu-wrapper">
                 <div class="site-branding">
-				    <a href="index.html" class="custom-logo-link" rel="home"><img width="400" height="65" src="Vastgold Logo.png" class="custom-logo" alt="Vastgold Enterprise Holding Ltd" decoding="async" /></a>			    </div>
+				    <a href="index.html" class="custom-logo-link" rel="home"><img src="Vastgold Logo.png" class="custom-logo" alt="Vastgold Enterprise Holding Ltd" decoding="async" style="height:50px;width:auto;object-fit:contain;" /></a>			    </div>
 
                 <nav id="site-navigation" class="main-navigation">
                     <div class="header-nav">
@@ -317,7 +334,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 	<div class="mobile-menu">
 		<div class="menu-bar">
 			<div class="site-logo">
-				<a href="index.html" class="custom-logo-link" rel="home"><img width="400" height="65" src="Vastgold Logo.png" class="custom-logo" alt="Vastgold Enterprise Holding Ltd" decoding="async" /></a>			</div>
+				<a href="index.html" class="custom-logo-link" rel="home"><img src="Vastgold Logo.png" class="custom-logo" alt="Vastgold Enterprise Holding Ltd" decoding="async" style="height:50px;width:auto;object-fit:contain;" /></a>			</div>
 							<div class="menu-toggle">
 					<i class="bi bi-grid-3x3-gap"></i>
 				</div>
@@ -889,7 +906,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 			<div class="container">
 				<div class="copyright-wrapper">
 											<div class="copyright-text" style="text-align: center;">
-							<p>Copyright © 2025 MATRIX BOND MANAGEMENT INC. all rights reserved.</p>
+							<p>Copyright © 2025 VASTGOLD ENTERPRISE HOLDING LTD. All rights reserved.</p>
 						</div>
 									</div>
 			</div>

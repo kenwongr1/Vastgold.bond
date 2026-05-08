@@ -222,36 +222,21 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
   display: block !important; flex-shrink: unset !important; white-space: normal !important;
 }
 
-/* ── 3D logo rotation ── */
-@keyframes logo-spin-3d {
-  0%   { transform: perspective(500px) rotateY(0deg)   translateZ(0); }
-  100% { transform: perspective(500px) rotateY(360deg) translateZ(0); }
-}
-@-webkit-keyframes logo-spin-3d {
-  0%   { -webkit-transform: perspective(500px) rotateY(0deg)   translateZ(0); }
-  100% { -webkit-transform: perspective(500px) rotateY(360deg) translateZ(0); }
-}
-#sticky-header .site-branding .custom-logo {
-  height: 90px !important; width: auto !important;
-  max-width: none !important; object-fit: contain !important;
-  display: block !important; -webkit-flex-shrink: 0; flex-shrink: 0;
-  -webkit-animation: logo-spin-3d 6s linear infinite;
-          animation: logo-spin-3d 6s linear infinite;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  -webkit-backface-visibility: visible;
-          backface-visibility: visible;
-}
-/* Pause spin on hover */
-#sticky-header .site-branding .custom-logo:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-
 body { -webkit-font-smoothing: antialiased; }
 #sticky-header { overflow: visible !important; }
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap" rel="stylesheet" id="vastgold-font">
+<style id="vastgold-slider-fix">
+/* Reduce hero slider height to 80% of original 820px */
+.slider-section.style1 .hero-slider .slider-item {
+  min-height: 656px !important;
+}
+@media (max-width: 767px) {
+  .slider-section.style1 .hero-slider .slider-item {
+    min-height: 420px !important;
+  }
+}
+</style>
 </head>
 
 <body class="archive category category-insights category-1 wp-custom-logo ehf-template-solute ehf-stylesheet-solute hfeed elementor-default elementor-kit-5891">

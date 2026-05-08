@@ -161,11 +161,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
   overflow: visible !important;
 }
 
-/* ── Logo link: flex row so image + text sit side by side ── */
-#sticky-header .site-branding {
-  -webkit-flex-shrink: 0;
-  flex-shrink: 0;
-}
+/* ── Logo link: inline-flex row ── */
+#sticky-header .site-branding { -webkit-flex-shrink: 0; flex-shrink: 0; }
 #sticky-header .site-branding .custom-logo-link {
   display: -webkit-inline-flex !important;
   display: inline-flex !important;
@@ -177,33 +174,42 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
   text-decoration: none;
 }
 
-/* ── Logo 100px tall ── */
+/* ── Logo: 90px tall, smooth rendering ── */
 #sticky-header .site-branding .custom-logo {
-  height: 100px !important;
+  height: 90px !important;
   width: auto !important;
   max-width: none !important;
   object-fit: contain !important;
   display: block !important;
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
-/* ── "Vastgold Enterprise" text beside logo ── */
+/* ── "Vastgold Enterprise" — 2 sizes up, fire gold color ── */
 #sticky-header .site-branding .custom-logo-link::after {
   content: "Vastgold Enterprise";
   display: inline-block !important;
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: #2c4a2e;
+  font-size: 1.55rem;
+  font-weight: 800;
   white-space: nowrap;
-  line-height: 1.3;
+  line-height: 1.2;
   vertical-align: middle;
+  background: linear-gradient(135deg, #FFB300 0%, #FF6F00 50%, #E65100 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.02em;
 }
 
-/* ── Nav pushed to far right ── */
+/* ── Nav pushed right ── */
 #sticky-header .main-navigation { margin-left: auto !important; }
 
-/* ── Nav tabs: no wrap, centered ── */
+/* ── Nav tabs: no wrap ── */
 #sticky-header .main-navigation .menu-ul {
   display: -webkit-flex !important;
   display: flex !important;
@@ -219,11 +225,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
   white-space: nowrap;
 }
 
-/* ── Dropdown sub-menus ── */
+/* ── Dropdowns ── */
 #sticky-header .menu-ul .menu-item-has-children { position: relative; }
 #sticky-header .menu-ul .menu-item-has-children > .sub-menu {
-  display: none; position: absolute;
-  top: 100%; left: 0; z-index: 99999; min-width: 180px;
+  display: none; position: absolute; top: 100%; left: 0; z-index: 99999; min-width: 180px;
 }
 #sticky-header .menu-ul .menu-item-has-children:hover > .sub-menu,
 #sticky-header .menu-ul .menu-item-has-children:focus-within > .sub-menu {
@@ -233,9 +238,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 #sticky-header .menu-ul .sub-menu li { display: block; }
 #sticky-header .menu-ul .sub-menu a  { display: block; white-space: nowrap; }
 
-/* ── Mobile: logo 70px, menu vertical ── */
+/* ── Mobile ── */
 .mobile-menu .site-logo .custom-logo {
-  height: 70px !important; width: auto !important; object-fit: contain !important;
+  height: 65px !important; width: auto !important; object-fit: contain !important;
+  image-rendering: -webkit-optimize-contrast;
 }
 .mobile-menu .menu-ul,
 .mobile-menu ul.menu-ul { display: block !important; flex-wrap: unset !important; }
@@ -243,7 +249,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
   display: block !important; flex-shrink: unset !important; white-space: normal !important;
 }
 
-/* ── Safari base fixes ── */
 body { -webkit-font-smoothing: antialiased; }
 #sticky-header { overflow: visible !important; }
 </style>
@@ -266,7 +271,7 @@ body { -webkit-font-smoothing: antialiased; }
         <div class="container">
             <div class="manu-wrapper">
                 <div class="site-branding">
-				    <a href="index.html" class="custom-logo-link" rel="home"><img src="Vastgold Logo.png" class="custom-logo" alt="Vastgold Enterprise Holding Ltd" decoding="async" style="height:100px;width:auto;object-fit:contain;" /></a>			    </div>
+				    <a href="index.html" class="custom-logo-link" rel="home"><img src="Vastgold Logo.png" class="custom-logo" alt="Vastgold Enterprise Holding Ltd" decoding="async" style="height:90px;width:auto;object-fit:contain;" /></a>			    </div>
 
                 <nav id="site-navigation" class="main-navigation">
                     <div class="header-nav">
@@ -311,7 +316,7 @@ body { -webkit-font-smoothing: antialiased; }
 	<div class="mobile-menu">
 		<div class="menu-bar">
 			<div class="site-logo">
-				<a href="index.html" class="custom-logo-link" rel="home"><img src="Vastgold Logo.png" class="custom-logo" alt="Vastgold Enterprise Holding Ltd" decoding="async" style="height:100px;width:auto;object-fit:contain;" /></a>			</div>
+				<a href="index.html" class="custom-logo-link" rel="home"><img src="Vastgold Logo.png" class="custom-logo" alt="Vastgold Enterprise Holding Ltd" decoding="async" style="height:90px;width:auto;object-fit:contain;" /></a>			</div>
 							<div class="menu-toggle">
 					<i class="bi bi-grid-3x3-gap"></i>
 				</div>

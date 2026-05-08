@@ -260,6 +260,43 @@ body { -webkit-font-smoothing: antialiased; }
   padding-top: 20px !important;
 }
 </style>
+<style id="contact-two-col">
+/* Office + Email as 2 equal columns */
+.elementor-1032 .elementor-element-6aa2ef1 {
+  width: 100% !important;
+}
+.elementor-1032 .elementor-element-7845f26 {
+  display: none !important;   /* right col is empty, hide it */
+}
+.elementor-1032 .elementor-element-6aa2ef1 > .elementor-element-populated {
+  padding: 40px 20px !important;
+}
+/* Make the widget-wrap a 2-col grid */
+.elementor-1032 .elementor-element-6aa2ef1 .elementor-widget-wrap {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 30px !important;
+  -webkit-align-items: start !important;
+  align-items: start !important;
+}
+/* Style each info box card */
+.elementor-1032 .elementor-element-7fa8d1b,
+.elementor-1032 .elementor-element-2d3328d {
+  background: #f8f9fc;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 10px;
+  padding: 30px 24px !important;
+}
+/* Hide any empty third widget */
+.elementor-1032 .elementor-element-54c8065 {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .elementor-1032 .elementor-element-6aa2ef1 .elementor-widget-wrap {
+    grid-template-columns: 1fr !important;
+  }
+}
+</style>
 </head>
 
 <body class="page-template-default page page-id-1032 wp-custom-logo ehf-template-solute ehf-stylesheet-solute elementor-default elementor-kit-5891 elementor-page elementor-page-1032">

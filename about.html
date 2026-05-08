@@ -137,138 +137,127 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 	</style>
 	
 
-<style id="safari-nav-fix">
-/* ── Desktop header: prevent nav tabs wrapping in Safari/Firefox ── */
+
+
+
+
+
+
+
+
+<style id="vastgold-header-fix">
+/* ── Vastgold header layout ─────────────────────────────── */
+
+/* Wrapper: logo+name on left, nav on right */
 #sticky-header .manu-wrapper {
-  display: -webkit-box !important;
   display: -webkit-flex !important;
   display: flex !important;
-  -webkit-flex-wrap: nowrap !important;
-          flex-wrap: nowrap !important;
   -webkit-align-items: center !important;
-          align-items: center !important;
+  align-items: center !important;
+  -webkit-justify-content: space-between !important;
+  justify-content: space-between !important;
+  -webkit-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
+  width: 100%;
   overflow: visible !important;
 }
 
-#sticky-header .site-branding { -webkit-flex-shrink: 0; flex-shrink: 0; }
+/* Logo + name group */
+#sticky-header .site-branding {
+  display: -webkit-flex !important;
+  display: flex !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  gap: 14px;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  text-decoration: none;
+}
 
-#sticky-header .main-navigation,
-#sticky-header .header-nav,
-#sticky-header .menu-menus-main-container { overflow: visible !important; }
+/* Logo 2x bigger: 100px tall */
+#sticky-header .site-branding .custom-logo,
+.site-branding img.custom-logo {
+  height: 100px !important;
+  width: auto !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  display: block !important;
+}
 
-#sticky-header #primary-menu.menu-ul,
-#sticky-header ul.menu-ul {
-  display: -webkit-box !important;
+/* Company name beside logo */
+#sticky-header .site-branding a::after {
+  content: "Vastgold Enterprise";
+  display: inline-block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #2c4a2e;
+  white-space: nowrap;
+  margin-left: 14px;
+  vertical-align: middle;
+  line-height: 1.2;
+}
+
+/* Nav pushed to the right */
+#sticky-header .main-navigation {
+  margin-left: auto !important;
+}
+
+/* Nav items: no wrap, aligned center */
+#sticky-header .main-navigation .menu-ul {
   display: -webkit-flex !important;
   display: flex !important;
   -webkit-flex-wrap: nowrap !important;
-          flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
   -webkit-align-items: center !important;
-          align-items: center !important;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  align-items: center !important;
+  margin: 0; padding: 0; list-style: none;
 }
-
-#sticky-header .menu-ul > li {
+#sticky-header .main-navigation .menu-ul > li {
   -webkit-flex-shrink: 0 !important;
-          flex-shrink: 0 !important;
+  flex-shrink: 0 !important;
   white-space: nowrap;
 }
 
-/* ── Desktop dropdown sub-menus on hover ── */
-#sticky-header .menu-ul .menu-item-has-children { position: relative; }
+/* Search icon stays at far right */
+#sticky-header .menu-element { -webkit-flex-shrink: 0; flex-shrink: 0; }
 
+/* ── Desktop dropdown ──────────────────────────────────── */
+#sticky-header .menu-ul .menu-item-has-children { position: relative; }
 #sticky-header .menu-ul .menu-item-has-children > .sub-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 99999;
-  min-width: 180px;
+  display: none; position: absolute;
+  top: 100%; left: 0; z-index: 99999; min-width: 180px;
 }
 #sticky-header .menu-ul .menu-item-has-children:hover > .sub-menu,
 #sticky-header .menu-ul .menu-item-has-children:focus-within > .sub-menu {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  pointer-events: all !important;
+  display: block !important; visibility: visible !important;
+  opacity: 1 !important; pointer-events: all !important;
 }
 #sticky-header .menu-ul .sub-menu li { display: block; }
 #sticky-header .menu-ul .sub-menu a  { display: block; white-space: nowrap; }
 
-/* ── Mobile menu: force vertical list (override any inherited flex) ── */
+/* ── Mobile logo also 2x ───────────────────────────────── */
+.mobile-menu .site-logo .custom-logo {
+  height: 70px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+/* ── Mobile menu stays vertical ───────────────────────── */
 .mobile-menu .menu-ul,
-.mobile-menu ul.menu-ul,
-.mobile-menu #primary-menu.menu-ul {
+.mobile-menu ul.menu-ul {
   display: block !important;
-  -webkit-flex-wrap: unset !important;
-          flex-wrap: unset !important;
+  flex-wrap: unset !important;
 }
 .mobile-menu .menu-ul > li {
   display: block !important;
-  -webkit-flex-shrink: unset !important;
-          flex-shrink: unset !important;
+  flex-shrink: unset !important;
   white-space: normal !important;
 }
 
-/* ── General Safari fixes ── */
-body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+/* ── General Safari fixes ──────────────────────────────── */
+body { -webkit-font-smoothing: antialiased; }
 #sticky-header { overflow: visible !important; }
-.site-branding img, .custom-logo { display: block; max-width: 100%; }
 </style>
-
-
-<style id="mobile-fix">
-/* ── Show mobile menu below 1199px, desktop header above ── */
-@media (max-width: 1199px) {
-  #sticky-header      { display: none !important; }
-  .mobile-menu        { display: block !important; }
-  body                { padding-top: 70px !important; }
-}
-@media (min-width: 1200px) {
-  #sticky-header      { display: block !important; }
-  .mobile-menu        { display: none !important; }
-  body                { padding-top: 0 !important; }
-}
-
-/* ── Keep mobile bar fixed at top ── */
-.mobile-menu {
-  position: fixed !important;
-  top: 0; left: 0; width: 100%;
-  z-index: 99999;
-  background: #fff;
-}
-
-/* ── Dropdown panel sits below the fixed bar ── */
-.mobile-menu .menu-content {
-  position: fixed !important;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  max-height: calc(100vh - 70px);
-  overflow-y: auto;
-  z-index: 99998;
-}
-</style>
-
-
-<style id="vastgold-logo-fix">
-/* Constrain Vastgold logo to header height */
-.custom-logo-link .custom-logo,
-.site-branding .custom-logo,
-.site-logo .custom-logo {
-  height: 50px !important;
-  width: auto !important;
-  max-width: 200px !important;
-  object-fit: contain !important;
-}
-/* Mobile bar logo slightly smaller */
-.mobile-menu .site-logo .custom-logo {
-  height: 44px !important;
-}
-</style>
-
 </head>
 
 <body class="page-template-default page page-id-5913 wp-custom-logo ehf-template-solute ehf-stylesheet-solute elementor-default elementor-kit-5891 elementor-page elementor-page-5913">
@@ -288,7 +277,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
         <div class="container">
             <div class="manu-wrapper">
                 <div class="site-branding">
-				    <a href="index.html" class="custom-logo-link" rel="home"><img src="Vastgold Logo.png" class="custom-logo" alt="Vastgold Enterprise Holding Ltd" decoding="async" style="height:50px;width:auto;object-fit:contain;" /></a>			    </div>
+				    <a href="index.html" class="custom-logo-link" rel="home"><img src="Vastgold Logo.png" class="custom-logo" alt="Vastgold Enterprise Holding Ltd" decoding="async" style="height:100px;width:auto;object-fit:contain;" /></a>			    </div>
 
                 <nav id="site-navigation" class="main-navigation">
                     <div class="header-nav">
@@ -333,7 +322,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 	<div class="mobile-menu">
 		<div class="menu-bar">
 			<div class="site-logo">
-				<a href="index.html" class="custom-logo-link" rel="home"><img src="Vastgold Logo.png" class="custom-logo" alt="Vastgold Enterprise Holding Ltd" decoding="async" style="height:50px;width:auto;object-fit:contain;" /></a>			</div>
+				<a href="index.html" class="custom-logo-link" rel="home"><img src="Vastgold Logo.png" class="custom-logo" alt="Vastgold Enterprise Holding Ltd" decoding="async" style="height:100px;width:auto;object-fit:contain;" /></a>			</div>
 							<div class="menu-toggle">
 					<i class="bi bi-grid-3x3-gap"></i>
 				</div>

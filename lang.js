@@ -5,6 +5,9 @@
   var currentLang = localStorage.getItem(STORAGE_KEY) || 'en';
 
   var zh = {
+    /* ── Brand name ─────────────────────────────────────────────── */
+    'mobile.brand': '宏鑫<br>企业控股',
+
     /* ── Navigation (shared across all pages) ─────────────────── */
     'nav.home':             '首页',
     'nav.about':            '关于我们',
@@ -192,6 +195,17 @@
     });
 
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en-US';
+
+    /* ── Desktop ::after brand name override ── */
+    var brandStyle = document.getElementById('vg-brand-lang-style');
+    if (!brandStyle) {
+      brandStyle = document.createElement('style');
+      brandStyle.id = 'vg-brand-lang-style';
+      document.head.appendChild(brandStyle);
+    }
+    brandStyle.textContent = lang === 'zh'
+      ? '#sticky-header .site-branding .custom-logo-link::after{content:"宏鑫企业控股"!important;white-space:nowrap!important;font-size:1.15rem!important;line-height:1.2!important;}'
+      : '';
 
     document.querySelectorAll('.vg-lang-btn').forEach(function (btn) {
       btn.innerHTML = lang === 'zh'

@@ -1,27 +1,24 @@
 (function () {
-  var canvas = document.createElement('canvas');
-  canvas.width  = 64;
-  canvas.height = 64;
-  var ctx = canvas.getContext('2d');
-  var img = new Image();
+  function setFavicon() {
+    // Remove any competing favicon links injected by WordPress/theme
+    document.querySelectorAll('link[rel*="icon"]').forEach(function (l) {
+      if (l.id !== 'vastgold-favicon') l.remove();
+    });
 
-  function getFavLink() {
     var el = document.getElementById('vastgold-favicon');
     if (!el) {
-      document.querySelectorAll('link[rel*="icon"]').forEach(function (l) { l.remove(); });
       el = document.createElement('link');
-      el.id   = 'vastgold-favicon';
-      el.rel  = 'icon';
+      el.id  = 'vastgold-favicon';
+      el.rel = 'icon';
       el.type = 'image/png';
       document.head.appendChild(el);
     }
-    return el;
+    el.href = 'Vastgold Logo.png';
   }
 
-  img.onload = function () {
-    ctx.drawImage(img, 0, 0, 64, 64);
-    getFavLink().href = canvas.toDataURL('image/png');
-  };
-
-  img.src = 'Vastgold Logo.png';
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setFavicon);
+  } else {
+    setFavicon();
+  }
 })();

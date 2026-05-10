@@ -181,21 +181,21 @@
   var enTitle = document.title;
 
   var zhTitles = {
-    'index.html':    '宏鑫企業控股有限公司',
-    'about.html':    '關於宏鑫企業 — 宏鑫企業控股',
-    'contact.html':  '聯絡我們 — 宏鑫企業控股',
-    'clients.html':  '我們的客戶 — 宏鑫企業控股',
-    'news.html':     '新聞 — 宏鑫企業控股',
-    'partners.html': '我們的合作夥伴 — 宏鑫企業控股',
-    'futures.html':  '宏鑫期貨 — 宏鑫企業控股',
-    'insights.html': '洞察 — 宏鑫企業控股',
-    'faqs.html':     '常見問題 — 宏鑫企業控股',
+    'index.html':    '宏鑫企业控股有限公司',
+    'about.html':    '关于宏鑫企业 — 宏鑫企业控股',
+    'contact.html':  '联系我们 — 宏鑫企业控股',
+    'clients.html':  '我们的客户 — 宏鑫企业控股',
+    'news.html':     '新闻 — 宏鑫企业控股',
+    'partners.html': '我们的合作伙伴 — 宏鑫企业控股',
+    'futures.html':  '宏鑫期货 — 宏鑫企业控股',
+    'insights.html': '洞察 — 宏鑫企业控股',
+    'faqs.html':     '常见问题 — 宏鑫企业控股',
   };
 
   function updateTitle(lang) {
     if (lang === 'zh') {
       var page = location.pathname.split('/').pop() || 'index.html';
-      document.title = zhTitles[page] || '宏鑫企業控股';
+      document.title = zhTitles[page] || '宏鑫企业控股';
     } else {
       document.title = enTitle;
     }

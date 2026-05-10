@@ -178,7 +178,31 @@
     'insights.breadcrumb': '洞察',
   };
 
+  var enTitle = document.title;
+
+  var zhTitles = {
+    'index.html':    '宏鑫企業控股有限公司',
+    'about.html':    '關於宏鑫企業 — 宏鑫企業控股',
+    'contact.html':  '聯絡我們 — 宏鑫企業控股',
+    'clients.html':  '我們的客戶 — 宏鑫企業控股',
+    'news.html':     '新聞 — 宏鑫企業控股',
+    'partners.html': '我們的合作夥伴 — 宏鑫企業控股',
+    'futures.html':  '宏鑫期貨 — 宏鑫企業控股',
+    'insights.html': '洞察 — 宏鑫企業控股',
+    'faqs.html':     '常見問題 — 宏鑫企業控股',
+  };
+
+  function updateTitle(lang) {
+    if (lang === 'zh') {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      document.title = zhTitles[page] || '宏鑫企業控股';
+    } else {
+      document.title = enTitle;
+    }
+  }
+
   function applyLang(lang) {
+    updateTitle(lang);
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var key = el.getAttribute('data-i18n');
       if (lang === 'zh') {

@@ -255,6 +255,18 @@ body { -webkit-font-smoothing: antialiased; }
 [lang="en-US"] .vg-brand-name { font-size: 1.2rem; }
 /* Remove any ::after text to avoid duplication */
 .mobile-menu .site-logo .custom-logo-link::after { content: none !important; }
+/* ── Sticky mobile header ── */
+.mobile-menu {
+  position: fixed !important;
+  top: 0 !important; left: 0 !important; right: 0 !important;
+  z-index: 9998 !important;
+  background: #fff !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12) !important;
+}
+/* Push page content below the fixed mobile bar */
+@media (max-width: 1024px) {
+  body { padding-top: 76px !important; }
+}
 </style>
 <style id="vg-lang-btn-styles">
 .vg-lang-btn{display:-webkit-inline-flex!important;display:inline-flex!important;-webkit-align-items:center!important;align-items:center!important;gap:5px!important;padding:5px 13px!important;font-size:.82rem!important;font-weight:700!important;color:#0a1f5c!important;background:#fff!important;border:1.5px solid #0a1f5c!important;border-radius:20px!important;cursor:pointer!important;vertical-align:middle!important;margin-left:14px!important;white-space:nowrap!important;box-shadow:0 1px 4px rgba(10,31,92,.1)!important;line-height:1!important;-webkit-flex-shrink:0!important;flex-shrink:0!important;}

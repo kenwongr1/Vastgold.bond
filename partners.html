@@ -281,6 +281,31 @@ body { -webkit-font-smoothing: antialiased; }
 .mobile-menu .site-logo{-webkit-flex:1 1 auto!important;flex:1 1 auto!important;min-width:0!important;}
 .mobile-menu .menu-bar .vg-lang-btn{-webkit-flex-shrink:0!important;flex-shrink:0!important;margin-left:0!important;padding:4px 10px!important;font-size:.75rem!important;border-radius:16px!important;}
 </style>
+<style id="vg-partners-grid">
+/* Show all partner logos as a static 3-column grid (3 rows for 7 logos) */
+.brand.style2 { text-align: center; }
+.brand.style2 .brand-carousel.owl-carousel .owl-stage-outer { overflow: visible !important; height: auto !important; }
+.brand.style2 .brand-carousel.owl-carousel .owl-stage {
+  display: -webkit-flex !important; display: flex !important;
+  -webkit-flex-wrap: wrap !important; flex-wrap: wrap !important;
+  -webkit-transform: none !important; transform: none !important;
+  width: 100% !important; transition: none !important;
+  -webkit-justify-content: center !important; justify-content: center !important;
+}
+.brand.style2 .brand-carousel.owl-carousel .owl-item {
+  width: 33.333% !important; -webkit-flex: 0 0 33.333% !important; flex: 0 0 33.333% !important;
+  display: -webkit-flex !important; display: flex !important;
+  -webkit-align-items: center !important; align-items: center !important;
+  -webkit-justify-content: center !important; justify-content: center !important;
+  padding: 16px !important;
+}
+.brand.style2 .brand-carousel.owl-carousel .brand-item img { max-width: 100%; height: auto; margin: 0 auto; display: block; }
+.brand.style2 .brand-carousel.owl-carousel .owl-nav,
+.brand.style2 .brand-carousel.owl-carousel .owl-dots { display: none !important; }
+@media (max-width: 480px) {
+  .brand.style2 .brand-carousel.owl-carousel .owl-item { width: 50% !important; -webkit-flex: 0 0 50% !important; flex: 0 0 50% !important; }
+}
+</style>
 </head>
 
 <body class="page-template-default page page-id-6050 wp-custom-logo ehf-template-solute ehf-stylesheet-solute elementor-default elementor-kit-5891 elementor-page elementor-page-6050">

@@ -233,31 +233,28 @@ body { -webkit-font-smoothing: antialiased; }
 }
 </style>
 <style id="vg-brand-grid-mobile">
-/* Centre brand logos on all screen sizes */
+/* Show all partner logos as a static 3-column grid (same as partners page) */
 .brand.style2 { text-align: center; }
-.brand.style2 .brand-carousel.owl-carousel { margin: 0 auto; }
-.brand.style2 .brand-item { display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
-.brand.style2 .brand-item img { margin: 0 auto; display: block; }
-
-/* On mobile: collapse both brand carousels into a visible 2-column grid */
-@media (max-width: 767px) {
-  .brand-carousel.owl-carousel .owl-stage-outer { overflow: visible !important; height: auto !important; }
-  .brand-carousel.owl-carousel .owl-stage {
-    display: -webkit-flex !important; display: flex !important;
-    -webkit-flex-wrap: wrap !important; flex-wrap: wrap !important;
-    -webkit-transform: none !important; transform: none !important;
-    width: 100% !important; transition: none !important;
-  }
-  .brand-carousel.owl-carousel .owl-item {
-    width: 50% !important; -webkit-flex: 0 0 50% !important; flex: 0 0 50% !important;
-    display: -webkit-flex !important; display: flex !important;
-    -webkit-align-items: center !important; align-items: center !important;
-    -webkit-justify-content: center !important; justify-content: center !important;
-    padding: 10px !important;
-  }
-  .brand-carousel.owl-carousel .owl-nav,
-  .brand-carousel.owl-carousel .owl-dots { display: none !important; }
-  .brand-carousel.owl-carousel .brand-item img { max-width: 100%; height: auto; }
+.brand.style2 .brand-carousel.owl-carousel .owl-stage-outer { overflow: visible !important; height: auto !important; }
+.brand.style2 .brand-carousel.owl-carousel .owl-stage {
+  display: -webkit-flex !important; display: flex !important;
+  -webkit-flex-wrap: wrap !important; flex-wrap: wrap !important;
+  -webkit-transform: none !important; transform: none !important;
+  width: 100% !important; transition: none !important;
+  -webkit-justify-content: center !important; justify-content: center !important;
+}
+.brand.style2 .brand-carousel.owl-carousel .owl-item {
+  width: 33.333% !important; -webkit-flex: 0 0 33.333% !important; flex: 0 0 33.333% !important;
+  display: -webkit-flex !important; display: flex !important;
+  -webkit-align-items: center !important; align-items: center !important;
+  -webkit-justify-content: center !important; justify-content: center !important;
+  padding: 16px !important;
+}
+.brand.style2 .brand-carousel.owl-carousel .brand-item img { max-width: 100%; height: auto; margin: 0 auto; display: block; }
+.brand.style2 .brand-carousel.owl-carousel .owl-nav,
+.brand.style2 .brand-carousel.owl-carousel .owl-dots { display: none !important; }
+@media (max-width: 480px) {
+  .brand.style2 .brand-carousel.owl-carousel .owl-item { width: 50% !important; -webkit-flex: 0 0 50% !important; flex: 0 0 50% !important; }
 }
 </style>
 <link id="vastgold-favicon" rel="icon" type="image/png" href="Vastgold Logo.png">

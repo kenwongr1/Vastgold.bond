@@ -1,19 +1,17 @@
 {
-  "version": 2,
-  "buildCommand": null,
-  "outputDirectory": ".",
-  "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/about", "dest": "/about.html" },
-    { "src": "/contact", "dest": "/contact.html" },
-    { "src": "/clients", "dest": "/clients.html" },
-    { "src": "/partners", "dest": "/partners.html" },
-    { "src": "/futures", "dest": "/futures.html" },
-    { "src": "/news", "dest": "/news.html" },
-    { "src": "/insights", "dest": "/insights.html" },
-    { "src": "/faqs", "dest": "/faqs.html" },
-    { "src": "/national-bank-panda-bonds", "dest": "/national-bank-panda-bonds.html" },
-    { "src": "/panda-bonds-surge", "dest": "/panda-bonds-surge.html" },
-    { "src": "/(.*)", "dest": "/$1" }
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/clients", "destination": "/clients.html" },
+    { "source": "/partners", "destination": "/partners.html" },
+    { "source": "/futures", "destination": "/futures.html" },
+    { "source": "/news", "destination": "/news.html" },
+    { "source": "/insights", "destination": "/insights.html" },
+    { "source": "/faqs", "destination": "/faqs.html" },
+    { "source": "/national-bank-panda-bonds", "destination": "/national-bank-panda-bonds.html" },
+    { "source": "/panda-bonds-surge", "destination": "/panda-bonds-surge.html" }
   ]
 }

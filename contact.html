@@ -170,24 +170,19 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
   display: block !important; -webkit-flex-shrink: 0; flex-shrink: 0;
 }
 
-/* ── "VASTGOLD / ENTERPRISE" — two-line stacked brand name ── */
-#sticky-header .site-branding .custom-logo-link::after {
-  content: "VASTGOLD\AENTERPRISE";
-  display: inline-block !important;
+/* ── Brand name is now a real <span class="vg-brand-desktop"> ── */
+#sticky-header .site-branding .custom-logo-link::after { content: none !important; }
+.vg-brand-desktop {
   font-family: 'Cinzel', 'Trajan Pro', 'Times New Roman', serif;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 900;
-  color: #0a1f5c !important;
-  -webkit-text-fill-color: #0a1f5c !important;
-  background: none !important;
-  -webkit-background-clip: unset !important;
-  background-clip: unset !important;
+  color: #0a1f5c;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  white-space: pre;
   line-height: 1.35;
-  vertical-align: middle;
   text-align: left;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* ── Nav left; lang button anchored far right ── */
@@ -326,7 +321,7 @@ body { -webkit-font-smoothing: antialiased; }
 /* Brand name span */
 .vg-brand-name {
   font-family: 'Cinzel', 'Trajan Pro', 'Times New Roman', serif;
-  font-size: 1.23rem;
+  font-size: 1.4rem;
   font-weight: 900;
   color: #0a1f5c;
   letter-spacing: 0.06em;

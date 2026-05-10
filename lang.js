@@ -38,15 +38,15 @@
     'index.flip1.front':      '风险管理',
     'index.flip1.back-title': '自信地驾驭风险',
     'index.flip1.back-desc':  '利用我们的熊猫债券衍生品对冲货币、利率和信用风险。宏鑫企业的定制解决方案助您在动态市场中实现财务稳定。',
-    'index.flip1.btn':        '阅读更多',
+    'index.flip1.btn':        '了解更多',
     'index.flip2.front':      '市场准入',
     'index.flip2.back-title': '无缝进入中国债券市场',
     'index.flip2.back-desc':  '简化您进入世界增长最快经济体之一的渠道。我们的工具和专业知识助跨国公司和机构投资者拓展中国金融市场。',
-    'index.flip2.btn':        '阅读更多',
+    'index.flip2.btn':        '了解更多',
     'index.flip3.front':      '技术驱动的交易',
     'index.flip3.back-title': '安全高效的金融运营',
     'index.flip3.back-desc':  '体验强大的技术驱动系统，实现安全透明的熊猫债券衍生品交易。我们确保每笔交易的合规性和精确性。',
-    'index.flip3.btn':        '阅读更多',
+    'index.flip3.btn':        '了解更多',
 
     'index.about.subtitle':    '关于宏鑫',
     'index.about.title':       '引领熊猫债券衍生品领域',
@@ -176,6 +176,48 @@
     /* ── Insights page ───────────────────────────────────────── */
     'insights.page-title': '熊猫债券激增：增长背后的原因？',
     'insights.breadcrumb': '洞察',
+
+    /* ── Blog detail pages (shared) ────────────────────────────── */
+    'blog.read-more':       '了解更多',
+    'blog.details-title':   '博客详情',
+    'blog.related-tags':    '相关标签：',
+    'blog.share-now':       '立即分享：',
+    'blog.prev-post':       '上一篇',
+    'blog.next-post':       '下一篇',
+    'blog.recent-posts':    '近期文章',
+    'blog.recent-comments': '近期评论',
+    'blog.no-comments':     '暂无评论。',
+    'blog.archives':        '归档',
+    'blog.categories':      '分类',
+    'blog.dec17-date':      '2024年12月17日',
+
+    /* ── Panda Bonds Surge article ─────────────────────────────── */
+    'article.panda-surge.views':   '298 次浏览',
+    'article.panda-surge.content':
+      '<p>来源：<a href="https://www.spglobal.com/ratings/en/research/articles/240807-your-three-minutes-in-panda-bonds-why-issuance-is-surging-13204721">https://www.spglobal.com/ratings/en/research/articles/240807-your-three-minutes-in-panda-bonds-why-issuance-is-surging-13204721</a></p>' +
+      '<p><strong>2024年有望成为自2005年市场开放以来熊猫债券发行最旺盛的一年。 </strong> 熊猫债券发行量2023年同比增长82%。截至2024年7月12日，2024年熊猫债券发行量已占2023年全年发行量的78%。 </p>' +
+      '<p>熊猫债券以中国人民币（RMB）计价，由非中国实体在中国国内债券市场发行。在中国大陆以外注册的中资实体同样具备发行资格。例如，所谓的红筹公司——在开曼群岛等离岸税务中心注册、但业务基地位于中国大陆的企业。 </p>' +
+      '<p><a></a><strong>是什么推动了发行量的激增？</strong></p>' +
+      '<p><strong>两大关键驱动因素之一是中美利率差。 </strong> 自2023年初以来美国利率的上升，使得实体在考虑交叉货币互换成本后，发行熊猫债券仍比直接进入美元市场更为便宜。</p>' +
+      '<p><strong>另一驱动因素是募集资金用途的明确化。 </strong> 2022年，中国政府出台政策，明确熊猫债券募集资金可以汇回境外。因此，外资跨国公司更加积极地进入熊猫债券市场，以筹集在华扩张所需资金。 </p>' +
+      '<figure class="wp-block-image size-full is-resized"><img fetchpriority="high" decoding="async" width="624" height="438" src="https://matrixbond.ca/wp-content/uploads/2024/12/Picture1.png" alt="" class="wp-image-6102" style="width:840px;height:auto" srcset="https://matrixbond.ca/wp-content/uploads/2024/12/Picture1.png 624w, https://matrixbond.ca/wp-content/uploads/2024/12/Picture1-300x211.png 300w" sizes="(max-width: 624px) 100vw, 624px" /></figure>' +
+      '<p><strong>为何此事重要？ </strong></p>' +
+      '<p><strong>熊猫债券市场有望成为非中国实体的重要融资渠道。 </strong> 目前，从熊猫债券市场筹集的资金规模相对较小。去年，熊猫债券融资仅占中国国内债券融资的0.8%（不含中央政府和地方政府债券）。发行人多样性的提升也增加了中国国内债券市场的深度和广度。 </p>' +
+      '<p><strong>深化债券市场、鼓励以人民币作为结算货币的政府政策，可能进一步推动熊猫债券市场的发展。 </strong> 寻求分散货币敞口的外国投资者也受到人民币债券与全球债券低相关性的吸引。外国投资者仅持有极小比例的人民币计价债券。 </p>' +
+      '<p><a></a><strong>未来展望 </strong></p>' +
+      '<p><strong>市场的进一步深化取决于长期债务的发行。 </strong> 熊猫债券的平均期限已从2022年的两年增加至三年以上。此外，外国发行人（不含中资实体）的质量和多样性将推动深化进程。发行监管和市场透明度对部分发行人而言仍是障碍。</p>' +
+      '<p><strong>汇率波动可能对募集资金的跨境管理产生影响。 </strong>人民币汇率波动是否会偶尔干扰熊猫债券发行资金从境内汇回境外的便利性，目前仍存在疑问。人民币稳定一直是中国政府的主要政策目标。</p>',
+
+    /* ── National Bank article ─────────────────────────────────── */
+    'article.national-bank.views':   '374 次浏览',
+    'article.national-bank.content':
+      '<p>蒙特利尔，2023年11月24日</p>' +
+      '<p>来源：<a href="https://www.nbc.ca/about-us/news-media/press-release/2023/20231124-nbc-panda-bonds.html">https://www.nbc.ca/about-us/news-media/press-release/2023/20231124-nbc-panda-bonds.html</a></p>' +
+      '<p>加拿大国家银行欣然宣布，于2023年10月30日，在中国大陆银行间债券市场公开发行，完成2023年熊猫债券计划第一期，募集人民币10亿元（约合加拿大元1.91亿元）。这是加拿大国家银行依据最新人民币100亿元熊猫债券计划（该计划已于2023年2月17日获中国人民银行批准）的首次发行，延续了其2016年首期熊猫债券计划的传统。本期债券年票面利率为3.20%，期限为三年。</p>' +
+      '<p>本次发行得到了加拿大国家银行指定的主承销商及主簿记行中国银行股份有限公司的大力支持，以及联席主承销商及联席主簿记行招商证券股份有限公司、中国工商银行股份有限公司、中国农业银行股份有限公司和星展银行（中国）有限公司的协助，同时还有联合体成员兴业银行股份有限公司和德意志银行（中国）股份有限公司的参与。</p>' +
+      '<p>作为本次发行的一部分，作为加拿大六家系统重要性银行之一的加拿大国家银行及其2023年熊猫债券（第一期）均获得中国大陆信用评级机构中诚信国际信用评级有限责任公司授予的AAA评级。</p>' +
+      '<p><strong><em>关于前瞻性陈述的提示声明<br></em></strong><em>本新闻稿中的某些陈述属于前瞻性陈述。这些陈述基于若干假设，并受到风险因素、固有风险和不确定性的影响，其中许多因素超出加拿大国家银行的控制范围，且其影响难以预测，包括与加拿大国家银行发行人民币计价熊猫债券的时间及完成相关的风险。除法律要求外，加拿大国家银行不承担更新任何前瞻性陈述的义务，无论该等陈述为书面形式还是口头形式，也无论其以何种方式或代表银行提出。本新闻稿所含前瞻性信息仅供解读本文所含信息之用，不适用于其他目的。 </em></p>' +
+      '<p><strong><em>关于加拿大国家银行<br></em></strong><em>截至2023年7月31日，</em><a href="http://www.nbc.ca/" target="_blank" rel="noreferrer noopener"><em>加拿大国家银行</em></a><em>资产规模达4260亿加元，连同其附属机构，共同构成加拿大领先的综合性金融集团之一。该行拥有约30,000名知识密集型岗位员工，并多次被评为最佳雇主，并因其对多元化的承诺而获得广泛认可。其证券在多伦多证券交易所上市（股票代码：TSX: NA）。欢迎通过</em><a href="http://www.nbc.ca/" target="_blank" rel="noreferrer noopener"><em>nbc.ca</em></a><em> 或社交媒体关注该行动态。</em></p>',
   };
 
   var enTitle = document.title;
@@ -189,7 +231,9 @@
     'partners.html': '我们的合作伙伴 — 宏鑫企业控股',
     'futures.html':  '宏鑫期货 — 宏鑫企业控股',
     'insights.html': '洞察 — 宏鑫企业控股',
-    'faqs.html':     '常见问题 — 宏鑫企业控股',
+    'faqs.html':                      '常见问题 — 宏鑫企业控股',
+    'panda-bonds-surge.html':         '熊猫债券激增：增长背后的原因？ — 宏鑫企业控股',
+    'national-bank-panda-bonds.html': '加拿大国家银行在中国大陆发行熊猫债券 — 宏鑫企业控股',
   };
 
   function updateTitle(lang) {

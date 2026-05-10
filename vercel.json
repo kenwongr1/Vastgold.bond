@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/contact", "dest": "/contact.html" },
+    { "src": "/clients", "dest": "/clients.html" },
+    { "src": "/partners", "dest": "/partners.html" },
+    { "src": "/futures", "dest": "/futures.html" },
+    { "src": "/news", "dest": "/news.html" },
+    { "src": "/insights", "dest": "/insights.html" },
+    { "src": "/faqs", "dest": "/faqs.html" },
+    { "src": "/national-bank-panda-bonds", "dest": "/national-bank-panda-bonds.html" },
+    { "src": "/panda-bonds-surge", "dest": "/panda-bonds-surge.html" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}

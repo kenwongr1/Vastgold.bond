@@ -179,11 +179,11 @@
 
     /* ── Insights listing page ─────────────────────────────────── */
     'insights.listing.views':   '276 次浏览',
-    'insights.listing.excerpt': '来源：https://www.spglobal.com/ratings/en/research/articles/240807-your-three-minutes-in-panda-bonds-why-issuance-is-surging-13204721 2024年有望成为自2005年市场开放以来熊猫债券发行最旺盛的一年。  熊猫债券发行量 ',
+    'insights.listing.excerpt': '2024年有望成为自2005年市场开放以来熊猫债券发行量最高的一年。2023年熊猫债券发行量同比增长82%，截至2024年7月，发行量已占2023年全年总量的78%。熊猫债券发行量',
 
     /* ── News listing page ──────────────────────────────────────── */
     'news.listing.views':   '347 次浏览',
-    'news.listing.excerpt': '蒙特利尔，2023年11月24日 来源：https://www.nbc.ca/about-us/news-media/press-release/2023/20231124-nbc-panda-bonds.html 加拿大国家银行欣然宣布，于2023年10月30日，在中国大陆银行间债券市场发行第一期 ',
+    'news.listing.excerpt': '蒙特利尔，2023年11月24日。加拿大国家银行欣然宣布，于2023年10月30日，在中国大陆银行间债券市场成功完成2023年熊猫债券计划第一期公开发行，募集人民币10亿元。',
 
     /* ── Blog detail pages (shared) ────────────────────────────── */
     'blog.read-more':       '了解更多',

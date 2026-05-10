@@ -248,7 +248,7 @@ body { -webkit-font-smoothing: antialiased; }
   display: -webkit-flex !important; display: flex !important;
   -webkit-align-items: center !important; align-items: center !important;
   -webkit-justify-content: center !important; justify-content: center !important;
-  padding: 16px !important;
+  padding: 8px !important;
 }
 .brand.style2 .brand-carousel.owl-carousel .brand-item img { max-width: 100%; height: auto; margin: 0 auto; display: block; }
 .brand.style2 .brand-carousel.owl-carousel .owl-nav,
@@ -256,6 +256,20 @@ body { -webkit-font-smoothing: antialiased; }
 @media (max-width: 480px) {
   .brand.style2 .brand-carousel.owl-carousel .owl-item { width: 50% !important; -webkit-flex: 0 0 50% !important; flex: 0 0 50% !important; }
 }
+</style>
+<style id="vg-home-spacing">
+/* Reduce section top/bottom padding across all home page sections */
+.elementor-element-982ae97.elementor-section,
+.elementor-element-097f1d0.elementor-section,
+.elementor-element-5ca566e.elementor-section,
+.elementor-element-8d160b7.elementor-section {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+/* Tighten inner partners sub-section */
+.elementor-element-7a28d3a.elementor-section { padding-top: 0 !important; padding-bottom: 0 !important; }
+/* Reduce gap between the two brand carousel widgets */
+.elementor-element-75c649d { margin-top: 0 !important; padding-top: 0 !important; }
 </style>
 <link id="vastgold-favicon" rel="icon" type="image/png" href="Vastgold Logo.png">
 <script src="favicon-spin.js" defer></script>

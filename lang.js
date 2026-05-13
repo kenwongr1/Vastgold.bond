@@ -279,9 +279,19 @@
         : '<span class="vg-flag">🇨🇳</span><span class="vg-lang-text">中文</span>';
     });
 
-    var mailLink = document.getElementById('vg-desktop-mail-link');
-    if (mailLink) {
-      mailLink.style.display = lang === 'zh' ? 'none' : '';
+    var enMailUrl = 'https://qiye.aliyun.com/?lang=en';
+    var zhMailUrl = 'https://qiye.aliyun.com/?lang=zh_CN';
+    var mailUrl = lang === 'zh' ? zhMailUrl : enMailUrl;
+
+    var desktopMail = document.getElementById('vg-desktop-mail-link');
+    if (desktopMail) {
+      desktopMail.href = mailUrl;
+      desktopMail.style.display = '';
+    }
+
+    var mobileMail = document.getElementById('vg-mobile-mail-link');
+    if (mobileMail) {
+      mobileMail.href = mailUrl;
     }
 
     localStorage.setItem(STORAGE_KEY, lang);

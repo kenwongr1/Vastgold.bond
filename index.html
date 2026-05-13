@@ -332,6 +332,17 @@ body { -webkit-font-smoothing: antialiased; }
 .mobile-menu .site-logo{-webkit-flex:1 1 auto!important;flex:1 1 auto!important;min-width:0!important;}
 .mobile-menu .menu-bar .vg-lang-btn{-webkit-flex-shrink:0!important;flex-shrink:0!important;margin-left:0!important;padding:4px 10px!important;font-size:.75rem!important;border-radius:16px!important;}
 </style>
+<style id="vg-contact-mobile">
+.contact-info-mobile { display: none; }
+@media (max-width: 767px) {
+  .contact-info-desktop { display: none !important; }
+  .contact-info-mobile { display: block; }
+}
+</style>
+<style id="vg-mail-icon">
+.vg-mail-icon-link { display: inline-flex; align-items: center; margin-left: 10px; vertical-align: middle; flex-shrink: 0; }
+.vg-mail-icon { height: 28px; width: auto; display: block; }
+</style>
 </head>
 
 <body class="home page-template-default page page-id-605 wp-custom-logo ehf-template-solute ehf-stylesheet-solute elementor-default elementor-kit-5891 elementor-page elementor-page-605">
@@ -381,6 +392,7 @@ body { -webkit-font-smoothing: antialiased; }
                 </nav>
                                     <div class="menu-element">
                         <button class="vg-lang-btn" type="button">🇨🇳 中文</button>
+                        <a href="https://qiye.aliyun.com/?lang=zh_CN" target="_blank" rel="noopener" class="vg-mail-icon-link"><img src="Mail icon.png" alt="Email" class="vg-mail-icon"></a>
                                             </div>
                             </div>
         </div>
@@ -427,12 +439,15 @@ body { -webkit-font-smoothing: antialiased; }
 			
 			
 							<div class="info">
-					<h3 class="title" data-i18n="nav.contact-info">Contact Info</h3>					<div class="info-box">
+					<h3 class="title contact-info-desktop" data-i18n="nav.contact-info">Contact Info</h3>					<div class="info-box contact-info-desktop">
 						<i class="bi bi-geo-alt"></i>
 						2610 Apec Plaza, 49 Hoi Yuen Road, Kwun Tong, KL, HK					</div>
-					<div class="info-box">
+					<div class="info-box contact-info-desktop">
 						<i class="bi bi-envelope"></i>
 						<a href="mailto:info@vastgoldent.com">info@vastgoldent.com						</a>
+					</div>
+					<div class="contact-info-mobile">
+						<a href="mailto:info@vastgoldent.com"><img src="Mail icon.png" alt="Email" style="width:40px;height:auto;"></a>
 					</div>
 				</div>
 			
